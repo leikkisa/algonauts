@@ -5,7 +5,16 @@ const fs = require('fs')
 const input = fs.readFileSync('./input-file.txt', 'utf8')
 
 const inputs = [
-
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
 ]
 
 const submissions = [

@@ -23,16 +23,18 @@ function complexityCalculator (iterations=10000, inputFunction, input1) {
 
 function runAllSubmissions(submissionsArr, iterations = 1000, inputArr, anonymous = true) {
   let result = []
-  submissionsArr.forEach((currentValue, index) => {
-    result[index] = { submission: currentValue.submission.name }
-    if(anonymous === false) { result[index].person = currentValue.person }
-    console.reset()
-    global.gc()
-    const calcResults = complexityCalculator(iterations, currentValue.submission, input)
-    result[index].ms = calcResults.ms
-    result[index].kb = calcResults.kb
-    global.gc()
-    console.reset()
+  inputArr.forEach((currentInput, inputIndex) => {
+
+    submissionsArr.forEach((currentSubmission, submissionIndex) => {
+      result[submissionIndex] = { submission: currentSubmission.submission.name }
+      if(anonymous === false) { result[submissionIndex].person = currentSubmission.person }
+      console.reset()
+      global.gc()
+      const calcResults = complexityCalculator(iterations, currentSubmission.submission, currentInput.value)
+      result[submissionIndex].result[inputIndex] = {n: currentInput.n, ms: calcResults.ms, kb: calcResults.kb}
+      global.gc()
+      console.reset()
+    })
   })
   const sortedResult = _.sortBy( result, 'ms' )
   console.log( 'sortedResult::', sortedResult )

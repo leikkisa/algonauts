@@ -13,7 +13,17 @@ const input = `7 3
 1 2 4 5 7 8 10`
 
 const inputs = [
-
+  {n: 7, value: `7 3
+  1 2 4 5 7 8 10`},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
+  {n: , value: ``},
 ]
 
 const submissions = [
@@ -28,7 +38,7 @@ const submissions = [
 ]
 
 
-runAllSubmissions(submissions, 1000, input)
+runAllSubmissions(submissions, 100, inputs)
 
 function processData4(input) {
     let d/*ifference*/ = input.split('\n')[0].split(' ').map(Number)[1]
