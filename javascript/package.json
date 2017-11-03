@@ -1,0 +1,14 @@
+{
+  "name": "algonauts-javascript",
+  "version": "1.0.0",
+  "description": "Learners Guild JavaScript Algonauts Challenges",
+  "main": "complexityCalculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sally Maki",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
