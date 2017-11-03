@@ -12,6 +12,10 @@ const input2 = fs.readFileSync('./beautiful-triplets-input.txt', 'utf8')
 const input = `7 3
 1 2 4 5 7 8 10`
 
+const inputs = [
+
+]
+
 const submissions = [
   {person: 'Sally', submission: processData1},
   {person: 'Patrick', submission: processData2},
@@ -23,7 +27,8 @@ const submissions = [
   {person: 'Jonathan', submission: processData4a},
 ]
 
-runAllSubmissions(submissions, 1000000, input, false)
+
+runAllSubmissions(submissions, 1000, input)
 
 function processData4(input) {
     let d/*ifference*/ = input.split('\n')[0].split(' ').map(Number)[1]

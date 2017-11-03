@@ -4,6 +4,7 @@
   "description": "Learners Guild JavaScript Algonauts Challenges",
   "main": "complexityCalculator.js",
   "scripts": {
+    "algo": "node --expose-gc $1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sally Maki",
