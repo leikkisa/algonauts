@@ -35,6 +35,7 @@ const submissions = [
 
 runAllSubmissions(submissions, 1000, inputs, false)
 
+// Sally
 function processData1(input) {
   // Started: 9:15 AM, Finished: 9:35 AM
   // Process input
@@ -42,29 +43,15 @@ function processData1(input) {
   const n = parseInt(inputArr[0])
   const a = inputArr[1]
   let sticks = inputArr[1].split(' ').map(Number)
-
+  // Algorithm
   while (sticks.length > 0) {
     console.log( sticks.length )
     sticks = sticks.map(stick => stick - Math.min.apply(null, sticks))
     sticks = sticks.filter(stick => stick > 0)
   }
 }
-// processData1(inputs[0].value)
 
-// function cutLogs2(arr) {
-//     let numOfLogs = arr.length;
-//     let minLength = Math.min(...arr);
-//     let reducedLogs = arr.map(num => num - minLength);
-//     let filteredLogs = reducedLogs.filter(num => num > 0);
-//     if (filteredLogs.length > 0) {
-//         console.log(reducedLogs.length);
-//         cutLogs(filteredLogs);
-//     } else {
-//         console.log(reducedLogs.length);
-//         return;
-//     }
-// }
-
+//Patrick 1
 function cutLogs(arr) {
     let numOfLogs = arr.length;
     let minLength = Math.min(...arr);
@@ -88,6 +75,7 @@ function cutLogs(arr) {
     */
 }
 
+// Patrick 2
 function cutLogs2(arr) {
     let numOfLogs = arr.length;
     let minLength = Math.min(...arr);
@@ -114,6 +102,7 @@ function main2(input) {
     cutLogs(arr);
 }
 
+//
 function main4(input) {
   const inputArr = input.split('\n')
   const n = parseInt(inputArr[0])
@@ -123,6 +112,7 @@ function main4(input) {
 }
 // main2(inputs[0].value)
 
+// Miles 1
 function main3(input) {
   const inputArr = input.split('\n')
   let n = parseInt(inputArr[0])
@@ -141,6 +131,7 @@ function main3(input) {
 }
 // main3(inputs[0].value)
 
+// Miles 2
 function main5(input) {
   const inputArr = input.split('\n')
   let n = parseInt(inputArr[0])
