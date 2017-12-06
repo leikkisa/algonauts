@@ -6,16 +6,21 @@ Steps
 5. Create function container(s)
 6. Implement code
 7. Test code
-8. Refactor
-9. Check edge cases
+8. Check edge cases
+9. Refactor/Optimize
 10. Determine time and space complexity
+
+My common mistakes
+1. Forgetting to turn text into numbers when processing inputs
 
 Types of approaches
 1. For loops
 2. Do while loops
+3. Switch statements (If logic)
 3. Functional programming (including recursion)
 4. Dynamic programming / memoization
 5. Hash maps
+6. Binary tree
 
 Types of problems
 1. Simple recursive algorithms
@@ -25,6 +30,7 @@ Types of problems
 5. Greedy algorithms
 6. Branch-and-bound algorithms
 7. Brute force algorithms
+8. Hash map - Do I have to look up a value?
 
 # Interviewer rubric
 

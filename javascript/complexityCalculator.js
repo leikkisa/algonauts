@@ -42,7 +42,7 @@ function runAllSubmissions(submissionsArr, iterations = 1000, inputArr, anonymou
       global.gc()
       console.reset()
       calcResults = complexityCalculator(1, currentSubmission.submission, currentInput.value.a, currentInput.value.d)
-      resultsHolder = calcResults
+      // resultsHolder = calcResults
       console.log( 'calcResults::', calcResults )
       result[submissionIndex].kb[inputIndex] = calcResults.kb
       global.gc()

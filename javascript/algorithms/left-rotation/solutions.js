@@ -16,7 +16,7 @@ function leftRotation5(a, d) {
   return result
 }
 
-console.log(leftRotation5(sampleA, sampleD))
+// console.log(leftRotation5(sampleA, sampleD))
 
 function leftRotation3(a, d) {
   return a.slice(d).concat(a.slice(0, d))
